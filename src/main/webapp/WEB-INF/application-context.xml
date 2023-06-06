@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="/Log_in" class="controlador.Login"/>
+    <bean name="/AgregarResidente" class="controlador.AgregarResidente"/>
+    <bean name="/SelectModResident" class="controlador.SelectModResident"/>
+    <bean name="/ModificarResidente" class="controlador.ModificarResidente"/>
+    <bean name="/GenerarReciboPago" class="controlador.GenerarReciboPago"/>
+    <bean name="/CargarObligacionResidente" class="controlador.CargarObligacionResidente"/>
+    <bean name="/GenerarHistorialPago" class="controlador.GenerarHistorialPago"/>
+    <bean name="/GenerarPaz_y_Salvo" class="controlador.GenerarPaz_y_Salvo"/>
+    <bean name="/GoHome" class="controlador.GoHome"/>
+    <bean name="/CambiarEstadoCuenta" class="controlador.CambiarEstadoCuenta"/>
+    <bean name="/RegistrarReservacion" class="controlador.RegistrarReservacion"/>
+    <bean name="/ConsultarDisponibilidadReservacion" class="controlador.ConsultarDisponibilidadReservacion"/>
+    <bean name="/CalcularPrecioReservacion" class="controlador.CalcularPrecioReservacion"/>
+    <bean name="/CalcularMultaReservacion" class="controlador.CalcularMultaReservacion"/>
+    <bean name="/RegistrarReservacionProp" class="controlador.RegistrarReservacionProp"/>
+    <bean name="/ConsultarDisponibilidadReservacionProp" class="controlador.ConsultarDisponibilidadReservacionProp"/>
+    <bean name="/CalcularPrecioReservacionProp" class="controlador.CalcularPrecioReservacionProp"/>
+
+</beans>

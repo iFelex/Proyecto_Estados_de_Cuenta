@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="proyectoFinal">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:/My_Sql_DB</jta-data-source>
+
+        <class>controlador.Login</class>
+        <class>controlador.AgregarResidente</class>
+        <class>controlador.SelectModResident</class>
+        <class>controlador.ModificarResidente</class>
+        <class>controlador.GenerarReciboPago</class>
+        <class>controlador.CargarObligacionResidente</class>
+        <class>controlador.GenerarHistorialPago</class>
+        <class>controlador.GenerarPaz_y_Salvo</class>
+        <class>controlador.GoHome</class>
+        <class>controlador.CambiarEstadoCuenta</class>
+        <class>controlador.RegistrarReservacion</class>
+        <class>controlador.ConsultarDisponibilidadReservacion</class>
+        <class>controlador.CalcularPrecioReservacion</class>
+        <class>controlador.CalcularMultaReservacion</class>
+        <class>controlador.RegistrarReservacionProp</class>
+        <class>controlador.ConsultarDisponibilidadReservacionProp</class>
+        <class>controlador.CalcularPrecioReservacionProp</class>
+        <class>persistencia.EntityManager</class>
+        <class>modelo.Administrador</class>
+        <class>modelo.Obligacion</class>
+        <class>modelo.Pago</class>
+        <class>modelo.Propietario</class>
+        <class>modelo.ReciboCobro</class>
+        <class>modelo.Reservacion</class>
+        <class>modelo.Residente</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/proyecto_final"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="qwerty25"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.flushMode" value="FLUSH_AUTO" />
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
